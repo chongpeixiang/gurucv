@@ -18,7 +18,7 @@ rects = detector.detectMultiScale(
 # loop over the faces and draw a rectangle surrounding each
 for (x, y, w, h) in rects:
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
-s="%d faces" % len(rects)
+s="%d Faces" % len(rects)
 # show the detected faces
 cv2.imshow(s, image)
 cv2.waitKey(0)
